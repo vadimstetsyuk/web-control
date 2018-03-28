@@ -38,6 +38,32 @@ body{
 
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+}
+
+.btn-large {
+	margin: 15px;
+}
+
+.brand-logo {
+	margin-left: 20px;
+}
+
+
+.map {
+	margin: 20px;
+}
+
+.data-row {
+	display: flex;
+	justify-content: center;
+	margin: 1px;
+}
+
+.data-column {
+	width:2px;
+	height: 1px;
+	background-color: black;
+	margin: 1px;
 }

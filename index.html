@@ -13,24 +13,88 @@
     <link href="css/icon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="container">
-        <a class="waves-effect waves-light btn-large red">
-            <i class="material-icons left">keyboard_arrow_left</i>
-            Stop
-        </a>
 
-        <div id="circle">
-            <div id="handler"></div>
-            <p id="test">0</p>
+<body>
+    <nav>
+        <div class="nav-wrapper green">
+            <a href="#" class="brand-logo">
+                <i class="material-icons">android</i>RPI Remote
+            </a>
+
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="sass.html">Settings</a>
+                </li>
+                <li>
+                    <a href="sass.html">About</a>
+                </li>
+                <li>
+                    <a href="collapsible.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col s12">
+            <ul class="tabs">
+                <li class="tab col s3">
+                    <a class="active" href="#manual-control">Manual control</a>
+                </li>
+                <li id="auto-mode" class="tab col s3">
+                    <a href="#auto-control">Autonomous control</a>
+                </li>
+                <li class="tab col s3">
+                    <a href="#map-builder">Map builder</a>
+                </li>
+            </ul>
         </div>
 
-        <a class="waves-effect waves-light btn-large">
-            Drive
-            <i class="material-icons right">keyboard_arrow_right</i>
-        </a>
+        <!-- MANUAL CONTROL -->
+        <div id="manual-control" class="col s12">
+            <div class="container">
+                <h4>Please set an angle direction and then turn drive!</h4>
+            </div>
+
+            <div id="circle">
+                <div id="handler"></div>
+                <p id="test">0</p>
+            </div>
+
+            <div class="container">
+                <a class="waves-effect waves-light btn-large red">
+                    <i class="material-icons left">keyboard_arrow_left</i>
+                    Stop
+                </a>
+                <a class="waves-effect waves-light btn-large">
+                    Drive
+                    <i class="material-icons right">keyboard_arrow_right</i>
+                </a>
+            </div>
+        </div>
+        <div id="auto-control" class="col s12">
+            <!-- Here we should display the map of the surrounding -->
+            <div class="map">
+
+            </div>
+
+            <div class="container">
+                <a class="waves-effect waves-light btn-large red">
+                    <i class="material-icons left">stop</i>
+                    Stop scanning
+                </a>
+                <a class="waves-effect waves-light btn-large">
+                    <i class="material-icons left">rss_feed</i>
+                    Start scanning
+                </a>
+            </div>
+        </div>
+        <div id="map-builder" class="col s12">
+            Test 3
+        </div>
     </div>
 
-    <script src="js/handler.js"></script>    
+    <script src="js/handler.js"></script>
 </body>
+
 </html>

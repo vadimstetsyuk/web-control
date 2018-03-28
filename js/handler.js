@@ -1,4 +1,9 @@
+$('.tabs').tabs();
 drawCircle();
+
+$(`#auto-mode`).click((e) => {
+    drawMap();
+});
 
 function drawCircle() {
     var $circle = $('#circle'),
@@ -25,7 +30,24 @@ function drawCircle() {
             $circle.css({ borderColor: "hsl(200,70%," + (perc * 70 / 100 + 30) + "%)" });
             // $p.html(perc).css({ color: "hsl(200,70%," + (perc * 70 / 100 + 30) + "%)" });
             $p.text(deg | 0);
-            
+
         }
     }).mouseup(function () { mHold = 0; });
+}
+
+function drawMap() {
+    let content = ``;
+    for (let i = 0; i < 120; i++) {
+        let row = `<div class="data-row">`;
+
+        for (let j = 0; j < 200; j++) {
+            row += `<div class="data-column" row-id="${i + 1}"></div>`;
+        }
+
+        row += `</div>`;
+
+        content += row;
+    }
+
+    $(`.map`).html(content);
 }
