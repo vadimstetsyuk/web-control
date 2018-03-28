@@ -1,0 +1,43 @@
+body{
+	margin:0;
+	font-family:Helvetica, Arial, sans-serif;
+}
+
+#circle {
+	position:relative;
+  margin: 50px auto;
+	width:300px;
+	height:300px;
+	border:2px solid hsl(200, 70%, 30%);
+	border-radius:50%;
+	background: radial-gradient(circle at 150px 150px, white, white);
+	box-shadow:0 3px 4px #000;
+	text-align:center;
+}
+#circle p{
+	font-size: 4.1em;
+	color: hsl(200, 70%, 30%);
+	text-shadow: 0 0 1px hsl(200, 70%, 30%);
+}
+#handler {
+	position:relative;
+	font-size:10px;
+	line-height:40px;
+	height:40px;
+	width:40px;
+	left:130px;
+	top:-20px;
+	background: radial-gradient(circle at 20px 20px, #0af, #034);
+	box-shadow:0 0 4px 1px #000;
+	border-radius:50%;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	user-select:none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web control</title>
+
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="waves-effect waves-light btn-large red">
+            <i class="material-icons left">keyboard_arrow_left</i>
+            Stop
+        </a>
+
+        <div id="circle">
+            <div id="handler"></div>
+            <p id="test">0</p>
+        </div>
+
+        <a class="waves-effect waves-light btn-large">
+            Drive
+            <i class="material-icons right">keyboard_arrow_right</i>
+        </a>
+    </div>
+
+    <script src="js/handler.js"></script>
+</body>
+
+</html>
